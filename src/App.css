@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: .282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: .61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +35,348 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App{
+  font-family: Arial;
+  margin: 0;
+}
+.topnav{
+  background-color: rgb(45 168 201);
+  text-align: center;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  font-family: none;
+}
+li{
+  list-style-type: none;
+}
+
+.topnav ul li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+}
+.topnav ul li ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.topnav ul li ul li {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.ul{
+  padding: 100px;
+}
+.top-head{
+  font-size: 30px;
+  color: white;
+  border-right: 1px solid;
+}
+.top-head{
+  border: 0;
+  font-size: 30px;
+  color: white;
+}
+.img{
+  left: 50px;
+  right: 30px;
+  bottom: 45px;
+  position: relative;
+  float: left;
+  background: rgb(0, 200, 255);
+}
+.txtarea{
+  outline: none;
+  resize: none;
+  margin-right: 30px;
+  float: right;
+  height: 20px;
+  width: 200px;
+  border-radius: 10px;
+  border-color: white;
+  background: rgb(45 168 201);
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding-right: 40px;
+  padding-top: 10px;
+  /*background-image: url(img/NXTLVL_WEBDEV_ICON_MAGNIFYING.png);*/
+}
+.background{
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 190px;
+  padding-right: 20px;
+}
+.topP{
+  margin:	10px;
+  font-size: 70px;
+  text-align: center;
+  color: rgb(45 168 201);
+}
+.TopP{
+  text-align: center;
+  font-size: 43px;
+  margin: 10px;
+  color: rgb(45 168 201);
+}
+.P{
+  text-align: center;
+  font-size: 43px;
+  margin-top: 10px;
+  color: rgb(45 168 201);
+}
+
+.container {
+  padding-bottom: 50px;
+}
+.progressbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: rgb(195 195 195);
+  counter-reset: step;
+}
+.progressbar li {
+  list-style-type: none;
+  width: 380px;
+
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(45 168 201);
+
+}
+.progressbar li:before {
+  width: 50px;
+  height: 50px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 30px;
+  border: 10px solid rgb(195 195 195);
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+}
+.progressbar li:after {
+  width: 100%;
+  height: 15px;
+  content: '';
+  position: absolute;
+  background-color: rgb(195 195 195);
+  top: 35px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  border: 0;
+  border-color: rgb(195 195 195);
+}
+.progressbar li.active:before {
+  border-color: rgb(195 195 195);
+  background-color: rgb(45 168 201);
+  color: white;
+}
+.progressbar li.active + li:after {
+  background-color: rgb(195 195 195);
+}
+
+.for-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div1{
+  align-content: center;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: rgb(235 235 235);
+  border-style: solid;
+  border-color: white;
+  height: 560px;
+  width: 600px;
+  border-radius: 20px;
+}
+.header{
+  margin-top: 10px;
+  width: 600px;
+}
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: rgb(0 162 232);
+}
+.form{
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-top: 0;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.paypal{
+  background-color: rgb(45 168 201);
+  color: white;
+  font-size: 30px;
+  height: 40px;
+  width: 280px;
+  margin: 0;
+  border-top-left-radius: 10px;
+  outline: none;
+  outline: none;
+  border: white solid;
+}
+.creditcard{
+  margin-right: 70px;
+  float: right;
+  font-size: 30px;
+  color: rgb(45 168 201);
+}
+.clearfix{
+  clear: both;
+}
+.fill{
+  padding-top: 20px;
+
+  color: rgb(45 168 201);
+  font-size: 25px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.txtarea{
+  overflow-y: hidden;
+  outline: none;
+  resize: none;
+  height: 30px;
+  width: 500px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  background-color: rgb(235 235 235);
+  border-radius: 5px;
+  border-color: white;
+
+
+}
+.txtarea1{
+  overflow-y: hidden;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  height: 30px;
+  width: 500px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  background-color: rgb(235 235 235);
+  border-color: white;
+}
+.txtarea2{
+  overflow-y: hidden;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  height: 30px;
+  width: 500px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  background-color: rgb(235 235 235);
+  border-color: white;
+}
+
+
+.clearfix{
+  clear: both;
+}
+.navtxt1{
+  outline: none;
+  resize: none;
+  width: 340px;
+  margin-left: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: white;
+}
+.navtxt2{
+  outline: none;
+  resize: none;
+  width: 340px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: white;
+}
+.button1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.button{
+;
+  outline: none;
+  font-size: 40px;
+
+  background: rgb(45 168 201);
+  width: 300px;
+  height: 80px;
+  border-radius: 10px;
+  color: white;
+
+  padding-top: 1px;
+  border: white solid;
+}
+.footer{
+  margin-top: 200px;
+  text-align: center;
+  align-content: center;
+  background: rgb(195 195 195);
+  height: 250px;
+}
+.circle{
+  text-align: center;
+  margin-top: 30px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 30px;
+}
+.ulP{
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  color: white;
+  border-right: 1px solid;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-right: 10px;
+}
+.ulP:last-child{
+  border: 0;
+}
+.PP{
+  margin: 0;
+  color: white;
 }
